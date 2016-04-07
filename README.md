@@ -7,7 +7,7 @@ Until 4.7.2016, 493 version updates were occured during the development and main
 
 The main purpose of the application is managing society with a dynamic "ejs" webpage, accepting applications from users that are already registered our system for our events and with an API building our own management system.
 
-Old link : http://ieeemetuncc.parseapp.com/login
-New link : https://github.com/ayigityol/IEEE-METU-NCC-Member-Management-System
-In the case that Parse Cloud Hosting Closed: https://web.archive.org/web/20160407151511/http://ieeemetuncc.parseapp.com/
-Management Login System : https://web.archive.org/web/20160407152347/http://ieeemetuncc.parseapp.com/login
+* Old link : http://ieeemetuncc.parseapp.com/login
+* New link : https://github.com/ayigityol/IEEE-METU-NCC-Member-Management-System
+* Snapshot of old main page: https://web.archive.org/web/20160407151511/http://ieeemetuncc.parseapp.com/
+* Snapshot of old login page : https://web.archive.org/web/20160407152347/http://ieeemetuncc.parseapp.com/login
