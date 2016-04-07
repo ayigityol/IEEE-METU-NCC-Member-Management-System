@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IEEE METU NCC SB</title>
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+		<script src="js/main2.js"> </script>
+    </head>
+    <body>
+	<div class="bg" > </div>
+	<div class="formdiv"> 
+      <form action="/userregister" id="formid" >
+      
+        <h1>Register IEEE METU NCC SB</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>User Basic info</legend>
+          <label for="NAME">NAME & SURNAME: *</label>
+          <input type="text" id="NAME" name="NAME">
+          <label for="EMAIL">EMAIL: *</label>
+          <input type="email" id="EMAIL" name="EMAIL">
+          <label for="PHONE">PHONE: *</label>
+          <input type="tel" id="PHONE" name="PHONE">
+		  <label for="STUDENTNO">STUDENT NUMBER: *</label>
+          <input type="number" id="STUDENTNO" name="STUDENTNO">
+		  <label for="DEPARTMENT">DEPARTMENT: *</label>
+		  <select name= "DEPARTMENT" id ="DEPARTMENT">
+			<option value="ECO">ECO</option>
+			<option value="BUS">BUS</option>
+			<option value="PSIR">PSIR</option>
+			<option value="CNG">CNG</option>
+			<option value="EEE">EEE</option>
+			<option value="ASE">ASE</option>
+			<option value="CVE">CVE</option>
+			<option value="CHME">CHME</option>
+			<option value="MECH">MECH</option>
+			<option value="PNGE">PNGE</option>
+			<option value="CTE">CTE</option>
+			<option value="EFL">EFL</option>
+			<option value="PSYC">PSYC</option>
+			<option value="GPC">GPC</option>
+		   </select>
+		  <label for="CLASS">CLASS: *</label>
+		  <select name= "CLASS" id="CLASS">
+			<option value="0">Preparatory</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+		   </select><label for="MEMBERNO">(If you have)GLOBAL MEMBER NUMBER:</label>
+          <input type="number" id="MEMBERNO" name="MEMBERNO" >
+		  <input type="hidden" name="k" value = "<%= value %>">
+		</fieldset>
+        <div class="button" onclick="confirmform()">Register IEEE METU NCC SB</div>
+      </form>
+      </div>
+	  </body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>IEEE METU NCC SB EVENT APP</title>
+	<meta name="description" content="IEEE METU NCC SB EVENT APP" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Tabbed stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/tabbed.css" media="screen" />
+	<!-- Demo stylesheet (no need to include it within your document) -->
+	<link rel="stylesheet" type="text/css" href="demo/demo.css" media="screen" />
+	<!-- Google maps scripts -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="js/gmaps.js"></script>
+	<script type="text/javascript">
+      var widgetId1;
+      var widgetId2;
+      var onloadCallback = function() {
+        // Renders the HTML element with id 'example1' as a reCAPTCHA widget.
+        // The id of the reCAPTCHA widget is assigned to 'widgetId1'.
+        widgetId1 = grecaptcha.render('c1', {
+          'sitekey' : '6Lcd4AMTAAAAAEOiUwccv4oXhi1NAQ4O4Co-NPdb'
+        });
+        widgetId2 = grecaptcha.render('c2', {
+          'sitekey' : '6Lcd4AMTAAAAAEOiUwccv4oXhi1NAQ4O4Co-NPdb'
+        });
+        grecaptcha.render('c3', {
+          'sitekey' : '6Lcd4AMTAAAAAEOiUwccv4oXhi1NAQ4O4Co-NPdb'
+        });
+      };
+    </script>
+</head>
+<div style="
+    background: url(&quot;http://i.ytimg.com/vi/jz7GBkgqEkI/maxresdefault.jpg&quot;);
+    background-size: cover;
+    -webkit-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+    overflow: auto;
+"></div>
+<body style="
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    overflow: auto;
+    zindex: 1;
+">
+	<div id="demo">
+
+		<!-- *************************** -->
+		<!-- START COPYING FROM HERE     -->
+		<!-- *************************** -->
+
+		<section id="tabbed">
+			<!-- First tab input and label -->
+			<input id="t-1" name="tabbed-tabs" type="radio" checked="checked" />
+			<label for="t-1" class="tabs shadow entypo-pencil">Login</label>
+			<!-- Second tab input and label -->
+			<input id="t-2" name="tabbed-tabs" type="radio" />
+			<label for="t-2" class="tabs shadow entypo-paper-plane">Register</label>
+			<!-- Third tab input and label -->
+			<input id="t-3" name="tabbed-tabs" type="radio" />
+			<label for="t-3" class="tabs shadow entypo-menu">Forgot My Password.</label>
+			
+			<!-- Tabs wrapper -->
+			<div class="wrapper shadow">
+
+				<!-- Tab 2 content -->
+				<div class="tab-1">
+					<div class="row">
+						<div class="cell w-100">
+							<div class="title large">IEEE METU NCC SB EVENT APP</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="cell w-100">
+							<p class="normal"><span class="icon entypo-paper-plane"></span>IEEE METU NCC SB 2015 ®</p>
+						</div>
+					</div>
+					<div class="row">
+						<!-- Form -->
+						<div class="cell w-49">
+							<form id="tab-form" name="tab-form" action="\app" method="POST">
+								<!-- Email input -->
+								<div class="cell w-100">
+									<input name="email" placeholder="your@email.com" type="email" id="email" required />
+								</div>
+								<!-- Pass input -->
+								<div class="cell w-100">
+									<input name="password" placeholder="Password" type="password" id="password" required />
+								</div>
+								<div class="cell w-100" id="c1">
+								</div>
+								<!-- Send button -->
+								<div class="cell w-32">
+									<input type="submit" value="Submit" class="button black" form="tab-form" />
+								</div>
+								<!-- Reset button -->
+								<div class="cell w-66">
+									<div class="clrfx mt-20"></div>
+									<input type="reset" id="reset-form" class="reset" value="&#8226; Reset form" />
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- / Tab 2 content -->
+				<!-- Tab 2 content -->
+				<div class="tab-2">
+					<div class="row">
+						<div class="cell w-100">
+							<div class="title large">Forms</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="cell w-100">
+							<p class="normal"><span class="icon entypo-paper-plane"></span>Responsive form is ideal for any kind of opportunity. Create simple forms within tabs for you visitors.</p>
+						</div>
+					</div>
+					<div class="row">
+						<!-- Form -->
+						<div class="cell w-100">
+							<form id="tab-form2" name="tab-form2" action="register2" method="POST">
+								<!-- Name input -->
+								<div class="cell w-100">
+									<input name="name" placeholder="Your name" type="text" id="name" required />
+								</div>
+								<div class="clrfx mt-10"></div>
+								<!-- Email input -->
+								<div class="cell w-100">
+									<input name="email" placeholder="your@email.com" type="email" id="email" required />
+								</div>
+								<div class="clrfx mt-10"></div>
+								<!-- Phone input -->
+								<div class="cell w-100">
+									<input name="phone" placeholder="+90 533 8.. .. .." type="tel" id="phone" required />
+								</div>
+								<div class="clrfx mt-10"></div>
+								<!-- Student no input -->
+								<div class="cell w-100">
+									<input name="studentno" placeholder="7 digit student number" type="tel" id="studentno" required />
+								</div>
+								<div class="clrfx mt-10"></div>
+								<!-- Subject input -->
+								<div class="cell w-100">
+									<select name="dep" id="dep" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
+										<option value="" disabled="disabled" selected="selected" class="disabled">Department</option>
+										<option value="ECO">ECO</option> 
+										<option value="BUS">BUS</option> 
+										<option value="PSIR">PSIR</option> 
+										<option value="CNG">CNG</option> 
+										<option value="EEE">EEE</option> 
+										<option value="ASE">ASE</option> 
+										<option value="CVE">CVE</option> 
+										<option value="CHME">CHME</option> 
+										<option value="MECH">MECH</option> 
+										<option value="PNGE">PNGE</option> 
+										<option value="CTE">CTE</option> 
+										<option value="EFL">EFL</option> 
+										<option value="PSYC">PSYC</option> 
+										<option value="GPC">GPC</option> 
+									</select>
+									<div id="arrow-select"></div>
+									<svg id="arrow-select-svg"></svg>
+								</div>
+								<div class="clrfx mt-10"></div>
+								<!-- Subject input -->
+								<div class="cell w-100">
+									<select name="clas" id="clas" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
+										<option value="" disabled="disabled" selected="selected" class="disabled">Class</option>
+										<option value="0">Preparatory</option> 
+										<option value="1">1</option> 
+										<option value="2">2</option> 
+										<option value="3">3</option> 
+										<option value="4">4</option> 
+									</select>
+									<div id="arrow-select"></div>
+									<svg id="arrow-select-svg"></svg>
+								</div>
+								<div class="clrfx mt-10"></div>
+								
+								<div class="cell w-100" id="c2">
+								</div>
+								<!-- Send button -->
+								<div class="cell w-32">
+									<input type="submit" value="Submit" class="button black" form="tab-form2" />
+								</div>
+								<!-- Reset button -->
+								<div class="cell w-66">
+									<div class="clrfx mt-20"></div>
+									<input type="reset" id="reset-form" class="reset" value="&#8226; Reset form" />
+								</div>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+				<!-- / Tab 2 content -->
+				<!-- Tab 2 content -->
+				<div class="tab-3">
+					<div class="row">
+						<div class="cell w-100">
+							<div class="title large">Forms</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="cell w-100">
+							<p class="normal"><span class="icon entypo-paper-plane"></span>Responsive form is ideal for any kind of opportunity. Create simple forms within tabs for you visitors.</p>
+						</div>
+					</div>
+					<div class="row">
+						<!-- Form -->
+						<div class="cell w-49">
+							<form id="tab-form3" name="tab-form3" method="POST">
+								
+								<div class="clrfx mt-10"></div>
+								<!-- Email input -->
+								<div class="cell w-100">
+									<input name="email" placeholder="your@email.com" type="email" id="email" required />
+								</div>
+								<div class="clrfx mt-10"></div>
+								
+								<div class="cell w-100" id="c3">
+								</div>
+								<!-- Send button -->
+								<div class="cell w-32">
+									<input type="submit" value="Submit" class="button black" form="tab-form3" />
+								</div>
+								<!-- Reset button -->
+								<div class="cell w-66">
+									<div class="clrfx mt-20"></div>
+									<input type="reset" id="reset-form" class="reset" value="&#8226; Reset form" />
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- / Tab 2 content -->
+			</div>
+			<!-- / Tabs wrapper -->
+		</section>
+
+		<!-- *************************** -->
+		<!-- END COPYING HERE            -->
+		<!-- *************************** -->
+
+	</div>
+	    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+
+</body>
+</html>

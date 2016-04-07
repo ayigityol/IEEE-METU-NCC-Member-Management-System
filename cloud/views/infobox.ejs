@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+  <script> 
+if(location.href.indexOf('?') != -1){
+	history.pushState(null, "Register an Organisation Form", "infobox.html");
+}</script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register an Organisation Form</title>
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+		<script src="js/main.js"> </script>
+    </head>
+    <body>
+	<div class="bg"> </div>
+	<div class="formdiv"> 
+      <form id="formid" >
+        <h1><%= title %></h1>  
+        <fieldset>
+          <legend><span class="number">!</span><%= title2 %></legend>
+          <div><%= title3 %></div>
+		</fieldset>
+      </form>
+      </div>
+	  </body>
+</html>

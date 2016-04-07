@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IEEE METU NCC SB</title>
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+		<script src="js/main3.js"> </script>
+    </head>
+    <body>
+	<div class="bg" > </div>
+	<div class="formdiv"> 
+      <form action="/registerJava" id="formid" >
+      
+        <h1>JAVA Programlama Egitimleri</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>JAVA Programlama Egitimleri Kayit Formu</legend>
+          <label for="NAME">ISIM SOYISIM: *</label>
+          <input type="text" id="NAME" name="NAME">
+          <label for="EMAIL">E POSTA: *</label>
+          <input type="email" id="EMAIL" name="EMAIL">
+          <label for="PHONE">TELEFON: *</label>
+          <input type="tel" id="PHONE" name="PHONE">
+		  <label for="STUDENTNO">OGRENCI NUMARASI: *</label>
+          <input type="number" id="STUDENTNO" name="STUDENTNO">
+		  <label for="DEPARTMENT">BOLUM: *</label>
+		  <select name= "DEPARTMENT" id ="DEPARTMENT">
+			<option value="ECO">ECO</option>
+			<option value="BUS">BUS</option>
+			<option value="PSIR">PSIR</option>
+			<option value="CNG">CNG</option>
+			<option value="EEE">EEE</option>
+			<option value="ASE">ASE</option>
+			<option value="CVE">CVE</option>
+			<option value="CHME">CHME</option>
+			<option value="MECH">MECH</option>
+			<option value="PNGE">PNGE</option>
+			<option value="CTE">CTE</option>
+			<option value="EFL">EFL</option>
+			<option value="PSYC">PSYC</option>
+			<option value="GPC">GPC</option>
+		   </select>
+		  <label for="CLASS">SINIF: *</label>
+		  <select name= "CLASS" id="CLASS">
+			<option value="0">Hazirlik</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			</select>
+			<label for="SECTION">SECTION: *</label>
+			<input type="radio" name="SECTION" value="1"> 1 Pazartesi 18.30 - 20.30 <br>
+			<input type="radio" name="SECTION" value="2"> 2 Sali 18.30 - 20.30
+		</fieldset>
+        <div class="button" onclick="confirmform()">JAVA Programlama Egitimlerine Kayit ol!</div>
+      </form>
+      </div>
+	  </body>
+</html>

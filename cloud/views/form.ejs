@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register an Organisation Form</title>
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+		<script src="js/main.js"> </script>
+    </head>
+    <body>
+	<div class="bg" > </div>
+	<div class="formdiv"> 
+      <form action="/sent" id="formid" >
+      
+        <h1>Register an Organisation Form</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Organisation Basic info</legend>
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title">
+          <label for="Location">Location:</label>
+          <input type="text" id="Location" name="Location">
+          <label for="Date">Date:</label>
+          <input type="date" id="Date" name="Date">
+          <label for="name">Time:</label>
+          <input type="time" id="Time" name="Time">
+		  <label for="picUrl">Pic Url:</label>
+          <input type="text" id="picUrl" name="picUrl">
+		  <label>Organisator:</label>
+          <input type="radio" id="SB" value="SB" name="organisator"><label id="SBL" for="organisator" class="light">IEEE Main Student Branch</label><br>
+		  <input type="radio" id="CS" value="CS" name="organisator"><label id="CSL" for="organisator" class="light">Computer Society</label><br>
+		  <input type="radio" id="GDC" value="GDC" name="organisator"><label id="GDCL" for="organisator" class="light">Graphics and Design Committee</label><br>
+		  <input type="radio" id="HRC" value="HRC" name="organisator"><label id="HRCL" for="organisator" class="light">Human Resources Committee</label><br>
+		  <input type="radio" id="OC" value="OC" name="organisator"><label id="OCL" for="organisator" class="light">Orgasation Committee</label><br>
+		  <input type="radio" id="PES" value="PES" name="organisator"><label id="PESL" for="organisator" class="light">Power Enegry Society</label><br>
+		  <input type="radio" id="WIE" value="WIE" name="organisator"><label id="WIEL" for="organisator" class="light">Women In Engineering</label><br>
+		  <input type="hidden" name="k" value = "<%= value %>">
+		  <input type="hidden" name="u" value = "<%= value2 %>">
+		</fieldset>
+        <div class="button" onclick="confirmform()">Send Organisation</div>
+      </form>
+      </div>
+	  </body>
+</html>
